@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift(File.expand_path('../../lib', __FILE__))
+
+require 'ttoken'
+
+CONFIG_FILE = '/etc/ttoken/ttoken.yml'.freeze
+ENCRYPTION_KEY_FILE = File.expand_path('~/.ttoken/ttoken_encryption_key.yml')
+
+Ttoken.setup
+Ttoken.run
+
+
+

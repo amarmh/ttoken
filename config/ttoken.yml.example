@@ -1,0 +1,8 @@
+# Enable pin+token
+:pinplustoken: yes
+
+# Issuer - The site or app you are creating the OTP
+:issuer: 'Red Hat'
+
+# Time-based token provided by issuer
+:token: '1234abcdxyz'
