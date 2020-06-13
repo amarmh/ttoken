@@ -46,6 +46,12 @@ Make sure you change the issuer and token.
 # ttoken
 ```
 
+## Screen
+
+Demo - Connecting to VPN using pin+token.
+
+![Alt text](images/ttoken.gif)
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/patilsuraj767/ttoken.
