@@ -7,7 +7,9 @@ Apart from generating time-based OTP, it provides the feature of creating pin+to
 ## Installation
 
 ```ruby
-# yum install ruby rubygems
+# yum install epel-release
+
+# yum install ruby rubygems xclip
 
 # gem install ttoken
 ```
@@ -16,13 +18,7 @@ Apart from generating time-based OTP, it provides the feature of creating pin+to
 
 Gem provides the executable command-line program - ttoken. 
 
-1) To encrypt and save your password/pin in ttoken use the below command. 
-
-```ruby
-# ttoken --encrypt
-```
-
-2) Create the file `/etc/ttoken/ttoken.yml` and enter the below content. 
+1) Create the file `/etc/ttoken/ttoken.yml` and enter the below content. 
 
 ```ruby
 # Issuer - The site or app you are creating the OTP
@@ -37,9 +33,13 @@ Gem provides the executable command-line program - ttoken.
 ```
 Make sure you change the issuer and token. 
 
+2) To encrypt and save your password/pin in ttoken use the below command. 
 
+```ruby
+# ttoken --encrypt
+```
 
-3) Running the command will generate pin+token and will copy it to the clipboard. 
+3) Running the ttoken command generates pin+token and will copy it to the clipboard. 
 
 
 ```ruby
